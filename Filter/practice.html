@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+   <!-- <script src="script.js"></script>-->
+    <script src="script2.js"></script>
+   
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="App">
+
+
+<div align="center" ng-controller="ahmed">
+    <h1 align="center"> Custom Filter</h1>
+<!--
+   Number: <input type="text" ng-model="number"> <br><br>
+
+   Base: <input type="text" ng-model="basenum">
+    <br>
+    <br>
+    The Number {{number}} after conversion to base {{basenum}} is {{number | base:basenum}}-->
+
+    <div ng-repeat="a in employees">
+        {{a.name | name:a.gender}} -- {{a.gender }}<br><br>
+
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
